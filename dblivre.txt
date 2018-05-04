@@ -1,0 +1,93 @@
+NULL	Le monde s'effondre	Chinua Achebe	5	1
+NULL	Contes	Hans Christian Andersen	6	NULL
+NULL	Orgueil et Préjugés	Jane Austen	6	NULL
+NULL	Le Père Goriot	Honoré de Balzac	5	NULL
+NULL	Trilogie : Molloy, Malone meurt, L'Innommable	Samuel Beckett	14	1
+NULL	Décaméron	Boccace	8	NULL
+NULL	Fictions	Jorge Luis Borges	5	NULL
+NULL	Les Hauts de Hurlevent	Emily Brontë	6	NULL
+NULL	L'Étranger	Albert Camus	6	NULL
+NULL	Les poèmes de...	Paul Celan	5	1
+NULL	Don Quichotte	Miguel de Cervantes	7	1
+NULL	Les Contes de Canterbury	Geoffrey Chaucer	5	NULL
+NULL	Nostromo	Joseph Conrad	3	NULL
+NULL	Divine Comédie	Dante Alighieri	6	NULL
+NULL	Les Grandes Espérances	Charles Dickens	5	1
+NULL	Jacques le fataliste et son maître	Denis Diderot	6	NULL
+NULL	Berlin Alexanderplatz	Alfred Döblin	6	NULL
+NULL	Crime et Châtiment	Fiodor Dostoïevski	5	NULL
+NULL	L'Idiot	Fiodor Dostoïevski	14	NULL
+NULL	Les Démons	Fiodor Dostoïevski	8	1
+NULL	Les Frères Karamazov	Fiodor Dostoïevski	5	1
+NULL	Middlemarch	George Eliot	6	NULL
+NULL	Homme invisible, pour qui chantes-tu ?	Ralph Ellison	6	NULL
+NULL	Médée	Euripide	5	NULL
+NULL	Absalon, Absalon !	William Faulkner	8	NULL
+NULL	Le Bruit et la Fureur	William Faulkner	9	NULL
+NULL	Madame Bovary	Gustave Flaubert	7	NULL
+NULL	L'Éducation sentimentale	Gustave Flaubert	5	1
+NULL	Romancero gitano	Federico García Lorca	3	NULL
+NULL	Cent ans de solitude	Gabriel García Márquez	6	NULL
+NULL	L'Amour aux temps du choléra	Gabriel García Márquez	5	NULL
+NULL	Épopée de Gilgamesh	Anonyme	6	NULL
+NULL	Faust	Johann Wolfgang von Goethe	6	1
+NULL	Les Âmes mortes	Nicolas Gogol	5	NULL
+NULL	Le Tambour	Günter Grass	14	NULL
+NULL	Diadorim (Grande Sertão: veredas)	João Guimarães Rosa	8	NULL
+NULL	La Faim	Knut Hamsun	5	1
+NULL	Le Vieil Homme et la Mer	Ernest Hemingway	6	NULL
+NULL	Iliade	Homère	6	1
+NULL	Odyssée	Homère	5	NULL
+NULL	Une maison de poupée	Henrik Ibsen	8	NULL
+NULL	Ulysse	James Joyce	7	NULL
+NULL	Les nouvelles de...	Franz Kafka	5	NULL
+NULL	Le Château	Franz Kafka	6	NULL
+NULL	La Reconnaissance de Shâkountalâ	Kâlidâsa	5	NULL
+NULL	Le Grondement de la montagne	Yasunari Kawabata	14	1
+NULL	Alexis Zorba	Níkos Kazantzákis	8	NULL
+NULL	Amants et Fils	D. H. Lawrence	5	NULL
+NULL	Gens indépendants	Halldór Laxness	6	NULL
+NULL	Les poèmes de...	Giacomo Leopardi	6	1
+NULL	Le Carnet d'or	Doris Lessing	5	NULL
+NULL	Fifi Brindacier	Astrid Lindgren	8	NULL
+NULL	Le Journal d'un fou	Lu Xun	9	NULL
+NULL	Les Fils de la Médina	Naguib Mahfouz	5	1
+NULL	Les Buddenbrook	Thomas Mann	3	NULL
+NULL	La Montagne magique	Thomas Mann	6	NULL
+NULL	Moby Dick	Herman Melville	5	NULL
+NULL	Essais	Michel de Montaigne	6	1
+NULL	La storia	Elsa Morante	5	NULL
+NULL	Beloved	Toni Morrison	14	NULL
+NULL	Le Dit du Genji	Murasaki Shikibu	8	NULL
+NULL	L'Homme sans qualités	Robert Musil	5	1
+NULL	Lolita	Vladimir Nabokov	6	1
+NULL	Saga de Njáll le Brûlé	Anonyme	5	1
+NULL	Les Métamorphoses	Ovide	9	NULL
+NULL	Le Livre de l'intranquillité	Fernando Pessoa	7	NULL
+NULL	Les Contes d'...	Edgar Allan Poe	5	NULL
+NULL	À la recherche du temps perdu	Marcel Proust	5	1
+NULL	Gargantua et Pantagruel	François Rabelais	14	1
+NULL	Pedro Páramo	Juan Rulfo	8	NULL
+NULL	Masnavî	Djalâl ad-Dîn Rûmî	5	1
+NULL	Les Enfants de minuit	Salman Rushdie	6	NULL
+NULL	Le Jardin des fruits	Saadi	6	NULL
+NULL	Saison de la migration vers le nord	Tayeb Salih	5	NULL
+NULL	L'Aveuglement	José Saramago	6	1
+NULL	Hamlet	William Shakespeare	5	1
+NULL	Le Roi Lear	William Shakespeare	9	NULL
+NULL	Othello ou le Maure de Venise	William Shakespeare	7	1
+NULL	Œdipe roi	Sophocle	5	NULL
+NULL	Le Rouge et le Noir	Stendhal	6	NULL
+NULL	Vie et opinions de Tristram Shandy, gentilhomme	Laurence Sterne	5	NULL
+NULL	La Conscience de Zeno	Italo Svevo	9	NULL
+NULL	Les Voyages de Gulliver	Jonathan Swift	7	NULL
+NULL	Récits divers	Anton Tchekhov	5	NULL
+NULL	Guerre et Paix	Léon Tolstoï	5	1
+NULL	Anna Karénine	Léon Tolstoï	9	1
+NULL	La Mort d'Ivan Ilitch	Léon Tolstoï	7	NULL
+NULL	Les Aventures de Huckleberry Finn	Mark Twain	6	NULL
+NULL	R?m?yana	Valmiki	5	1
+NULL	Énéide	Virgile	9	1
+NULL	Feuilles d'herbe	Walt Whitman	7	NULL
+NULL	Mrs Dalloway	Virginia Woolf	5	1
+NULL	La Promenade au phare	Virginia Woolf	7	NULL
