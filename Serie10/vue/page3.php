@@ -1,43 +1,41 @@
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
 
-
-
-<div class="container-fluid">
-	<div class="row">
-		<header id="header" class="col-lg-10 offset-3">
-			<h1>page 3</h1>
-		</header>	
-	</div>
-</div>
 <div class="container">
 
-	<div class="row">
-		<section class="col-lg-10">
-			<div class="row">					
-				<article class="col-sm-6">
-					<h2>Inscrivez-vous</h2>
-					<p>Inscrivez-vous ici pour ceçevoir chaque semaine votre comparatif!</p>
-					<form action="page3.php" method="post" accept-charset="utf-8">
-						<p>Nom :<input type="text" name="NOM" value= <?php echo '"'.$VarNom.'"'; ?> placeholder="Entrez votre nom" ></p>
-						<?php echo $VarErrNom ?>
-						<p>Email :<input type="text" name="EMAIL" value= <?php echo '"'.$VarEmail.'"'; ?> placeholder="nom.prenom@gmail.com" ></p>
-						<?php echo $VarErrEmail ?>
-						<p><input type="submit" name="" value="Envoyer"></p>
-					</form>
-
-				</article>
-
-			</div>
-		</section>
-		<aside class="col-lg-2">
-			<h2>Fil d'actualité</h2>
-			<ul>
-				<li>Aujourd'hui à 21:07 VIDÉO | Des feux d’artifice «silencieux» au nouvel an pour respecter les animaux?</li>
-				<li>Aujourd'hui à 21:04 Liban: le Premier ministre démissionnaire à Paris</li>
-				<li>Aujourd'hui à 21:02 Charles Michel avec des étudiants Erasmus en Suède</li>
-				<li>Aujourd'hui à 20:47 Accident avec un taxi: on recherche le témoin</li>
-				<li>Aujourd'hui à 20:26 Drame à Huccorgne: une maman et une fillette décédées</li>
-
-			</ul>
-		</aside>
-	</div>
+	<h1>Panier</h1><hr>
+	<table class="table table-striped table-hover table-bordered">
+        <tbody>
+            <tr>
+                <th>Livre</th>
+                <th>Quantité</th>
+                <th>Prix unitaire</th>
+                <th>Prix total </th>
+            </tr>
+            <tr>
+                <td>Le monde s'effondre</td>
+                <td>2 <a href="#">X</a></td>
+                <td>5€</td>
+                <td>10€</td>
+            </tr>
+            <tr>
+                <th colspan="3"><span class="pull-right">Sous-total</span></th>
+                <th>10€</th>
+            </tr>
+            <tr>
+                <th colspan="3"><span class="pull-right">TVA 21%</span></th>
+                <th>1,05€</th>
+            </tr>
+            <tr>
+                <th colspan="3"><span class="pull-right">Total</span></th>
+                <th>6,05</th>
+            </tr>
+            <tr>
+                <td><a href="page4.php" class="btn btn-primary">Continuer les achats</a></td>
+                <td colspan="3"><a href="page6.php" class="pull-right btn btn-success">Commander</a></td>
+            </tr>
+        </tbody>
+    </table>          
+      
 </div>

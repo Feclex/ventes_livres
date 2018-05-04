@@ -30,7 +30,7 @@ if($_SESSION != TRUE){
 				<li><a href="Page5.php">Membres</a></li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right">
-				<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Panier</a></li>
+				<li><a href="Page3.php"><span class="glyphicon glyphicon-shopping-cart"></span> Panier</a></li>
 				<?php
 if(isset($_SESSION['UTILISATEUR_OK']) && $_SESSION['UTILISATEUR_OK'] == 1 && isset($_SESSION['UTILISATEUR_NOM'])){
 			Echo /* $_SESSION['UTILISATEUR_NOM'].*/'
