@@ -1,13 +1,12 @@
-
-
 <head>
-  <title>Liste lisvre</title>
+  <title>Liste livres</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=0">
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
+<body>
 
-<body><table class="table table-dark">
+<table class="table table-dark">
   <thead>
     <tr>
 
@@ -17,7 +16,7 @@
       <th scope="col">Actif/Désactiver</th>
     </tr>
   </thead>
-  <tbody>
+  
   <?php 
 foreach($ventelivres->data as $k){
 	echo '
@@ -30,9 +29,7 @@ foreach($ventelivres->data as $k){
   </tr>'
 	/*echo $k->nom .', '. $k->prenom .'<br>'*/;
 }
-?>
-
-  </tbody>
-</table>
+?></table>
+</body>
 
 

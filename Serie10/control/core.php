@@ -1,6 +1,6 @@
 <?php 
 	session_start(); 
-	require_once '../control/Personnage.php';
+
 	require_once '../control/Utilisateur.php';
 	require_once '../vue/form.php';
 	require_once '../vue/formlogin.php';
