@@ -1,4 +1,3 @@
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 
 <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
 
@@ -26,11 +25,11 @@
             </tr>
             <tr>
                 <th colspan="3"><span class="pull-right">TVA 21%</span></th>
-                <th>1,05€</th>
+                <th>2,10€</th>
             </tr>
             <tr>
                 <th colspan="3"><span class="pull-right">Total</span></th>
-                <th>6,05</th>
+                <th>12,10€</th>
             </tr>
             <tr>
                 <td><a href="page4.php" class="btn btn-primary">Continuer les achats</a></td>

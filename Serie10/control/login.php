@@ -1,5 +1,5 @@
 <?php 
-$Montitle= 'Mon Title 1';
+$Montitle= 'Connexion';
 require '../control/core.php' ;
 
 if(isset($_POST['UTILISATEUR']) && isset($_POST['MDP'])){

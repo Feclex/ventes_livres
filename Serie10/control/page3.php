@@ -1,5 +1,5 @@
 <?php 
-$Montitle= 'Panier';
+$Montitle= 'Pan';
 require '../control/core.php' ;
 require '../vue/haut.php' ;
 

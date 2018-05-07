@@ -1,5 +1,5 @@
 <?php 
-	$Montitle= 'Acceuil';
+	$Montitle= 'Accueil';
 	require '../control/core.php' ;
 	require '../vue/haut.php' ;
 ?>

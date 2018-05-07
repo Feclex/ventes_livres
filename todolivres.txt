@@ -1,0 +1,3 @@
+Utiliser de l'AJAX 
+Insérer des ventes pour jouer avec le panier
+Lier panier avec les livres pour les commandes

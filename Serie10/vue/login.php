@@ -9,12 +9,12 @@ $monFormulaire->addSubmit('VALIDER','Valider');
 <div class="container">
     <div class="row">
         <div class="col-sm-6 col-md-4 col-md-offset-4">
-            <h1 class="text-center login-title">Login</h1>
+            <h1 class="text-center login-title">Déjà enregistré?</br>Connectez-vous!</h1>
             <div class="account-wall">
                 <img class="img-responsive" src="../vue/images/login.png"
                     alt="">
-                  <?php  echo $monFormulaire->getForm(); ?>
-                          
+                     <?php  echo $monFormulaire->getForm(); ?>
+                        
                 
             </div>
            

@@ -44,7 +44,7 @@ if(isset($_SESSION['UTILISATEUR_OK']) && $_SESSION['UTILISATEUR_OK'] == 1 && iss
 					</a>
 					<ul class="dropdown-menu">
 					<form action="session_destroy.php" method="post" accept-charset="utf-8">
-						<li><a href="session_destroy.php"><i class="icon-share"></i> Logout</a></li>
+						<li><a href="session_destroy.php"><i class="icon-share"></i>Logout</a></li>
 						</form>
 					</ul>
 				</div>'

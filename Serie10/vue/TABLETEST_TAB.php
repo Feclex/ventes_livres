@@ -12,8 +12,10 @@
     <tr>
 
       <th scope="col">Utilisateur</th>
+      <th scope="colspan">Nom</th>
       <th scope="col">Prenom</th>
-	  <th scope="colspan">Mod</th>
+     
+	  <th scope="colspan">Modification</th>
 	 
       <th scope="col">Actif/Désactiver</th>
     </tr>
@@ -26,7 +28,7 @@ foreach($ventelivres->data as $k){
 	<td>'.$k->utilisateur.' </td>
 	<td>'.$k->nom.' </td>
 	<td>'.$k->prenom.'</td>
-	
+	<td></td>
 	<td>'.$k->actif.'</td>
   </tr>'
 	/*echo $k->nom .', '. $k->prenom .'<br>'*/;
