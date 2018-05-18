@@ -31,13 +31,15 @@ $monFormulaire->addText('Nom :','NOM','NOM',$VarNom,false,'Entrez ici le nom rec
 $monFormulaire->addSubmit('VALIDER','Valider');
 echo $monFormulaire->getForm();
 
-$ventelivres=Model::load("utilisateurs");
-$ventelivres->read(null,$where);
+$Utilisateurs=Model::load("utilisateurs");
+$Utilisateurs->read(null,$where);
 
-require '../vue/assets/gethint.php';
+
 require '../vue/TABLETEST_TAB.php' ;
 
 
 
 ?>
+
+
 

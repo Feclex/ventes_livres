@@ -4,7 +4,7 @@ class Utilisateur{
 		$utilisateurs=Model::load("utilisateurs");
 		$utilisateurs->id=$pUtilisateur;
 		$utilisateurs->read();
-		if(isset($utilisateurs->data[0]->code) && $utilisateurs->data[0]->code==$pMdp){
+		if(isset($utilisateurs->data[1]->code) && $utilisateurs->data[0]->code==$pMdp){
 
 			return true;
 		}
