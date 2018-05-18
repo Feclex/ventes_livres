@@ -1,3 +1,3 @@
 Utiliser de l'AJAX 
-Insérer des ventes pour jouer avec le panier
+Insérer des ventes pour jouer avec le panier /!\ IL FAUT REVOIR LES TABLES CAR ON NE PEUT RIEN Insérer
 Lier panier avec les livres pour les commandes

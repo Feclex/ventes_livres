@@ -7,35 +7,29 @@
   <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
 </head>
 
-<body><table class="table table-dark">
-  <thead>
-    <tr>
+<p><b>Start typing a name in the input field below:</b></p>
+<form> 
+First name: <input type="text" onkeyup="showHint(this.value)"></br>
+</form>
+<p>Suggestions: <span id="txtHint"></span></p>
 
-      <th scope="col">Utilisateur</th>
-      <th scope="colspan">Nom</th>
-      <th scope="col">Prenom</th>
-     
-	  <th scope="colspan">Modification</th>
-	 
-      <th scope="col">Actif/Désactiver</th>
-    </tr>
-  </thead>
-  <tbody>
-  <?php 
-foreach($ventelivres->data as $k){
-	echo '
-	<tr>
-	<td>'.$k->utilisateur.' </td>
-	<td>'.$k->nom.' </td>
-	<td>'.$k->prenom.'</td>
-	<td></td>
-	<td>'.$k->actif.'</td>
-  </tr>'
-	/*echo $k->nom .', '. $k->prenom .'<br>'*/;
+
+
+<script>
+function showHint(str) {
+    if (str.length == 0) { 
+        document.getElementById("txtHint").innerHTML = "";
+        return;
+    } else {
+        var xmlhttp = new XMLHttpRequest();
+        xmlhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("txtHint").innerHTML = this.responseText;
+            }
+        };
+        xmlhttp.open("GET", "../control/gethintcontrol.php?PRENOM=" + str, true);
+        xmlhttp.send();
+    }
 }
-?>
-
-  </tbody>
-</table>
-
+</script>
 

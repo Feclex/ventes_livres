@@ -34,7 +34,7 @@ echo $monFormulaire->getForm();
 $ventelivres=Model::load("utilisateurs");
 $ventelivres->read(null,$where);
 
-
+require '../vue/assets/gethint.php';
 require '../vue/TABLETEST_TAB.php' ;
 
 

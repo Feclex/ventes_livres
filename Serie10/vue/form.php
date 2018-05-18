@@ -38,7 +38,7 @@ class form{
 		
 		$this->monForm.='<label for="'.$pId.'">'.$pLabel.' </label>';
 		$this->monForm.='<input class= "'.$this->classeBootstrap.'" type="text" name="'.$pName.'" id="'.$pId.'" '.$this->getRequired($pRequired).' placeholder="'.$pPlaceholder.'" value = "'.$pValue.'"/><br/>';
-		$this->monForm.='<br/>';
+		$this->monForm.='';
 		
 	}
 
@@ -80,7 +80,7 @@ class form{
 	public function addSubmit($pName,$pValue,$pParam=null)
 	{
 		
-		$this->monForm.='<br/><input class= "'.$this->classeBootstrap.'" type="submit" name="'.$pName.'" value="'.$pValue.'"/>';
+		$this->monForm.='<input class= "'.$this->classeBootstrap.'" type="submit" name="'.$pName.'" value="'.$pValue.'"/>';
 		
 	}
 
