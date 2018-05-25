@@ -4,6 +4,7 @@ $monFormulaire = new formlogin('Formulaire','post','../control/login.php');
 $monFormulaire->addText('Email :','UTILISATEUR','UTILISATEUR','',true,'nom.prenom@fournisseur.be');
 $monFormulaire->addPassword('Mot de passe :','MDP','MDP','',true,'Entrez ici votre nom');
 $monFormulaire->addSubmit('VALIDER','Valider');
+
 ?>
 
 <div class="container">
@@ -15,7 +16,7 @@ $monFormulaire->addSubmit('VALIDER','Valider');
                     alt="">
                      <?php  echo $monFormulaire->getForm(); ?>
                         
-                
+             
             </div>
            
         </div>
