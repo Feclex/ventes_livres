@@ -26,8 +26,7 @@ foreach($ventelivres->data as $k){
 	<td>'.$k->prix_unitaire.'€ </td>
 	<td>'.$k->actif.' </td>
 	<td></td>
-  </tr>'
-	/*echo $k->nom .', '. $k->prenom .'<br>'*/;
+  </tr>';
 }
 ?></table>
 </body>

@@ -8,20 +8,24 @@ $out .= '<tr id="'.$element->utilisateur.'">';
 foreach($element as $subkey => $subelement){
   if($titre_trt==false){
     $titre .= '<th>'.$subkey.'</th>';
+   
   }
+
   $out .= '<td id="'.$subkey.'">'.$subelement.'</td>';
   }
   if($titre_trt==false){
-    $titre.='</tr>';
+    $titre.= '<th>Modification</th></tr>';
   }
-  $titre_trt= true;
+      $titre_trt= true;
+      $out .= '<td id="modifier"><button type="button" class="btn btn-sucess btn-lg" data-toggle="modal" data-target="#myModal"><i class="far fa-edit"></i></button></td>';
   $out .= "</tr>";
 }
-$out ='<table id="utilisateurs">'.$titre.$out.'</table>'; 
+$out ='<table id="utilisateurs" class="table table-dark">'.$titre.$out.'</table>'; 
 echo $out;
+
 ?>
 
-<script>
+<!-- <script>
  function showHint(str) {
      if (str.length == 0) { 
          document.getElementById("txtHint").innerHTML = "";
@@ -38,4 +42,4 @@ echo $out;
      }
 }
 </script>
-
+ -->

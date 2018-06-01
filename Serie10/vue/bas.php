@@ -1,4 +1,5 @@
 	<script src="../vue/js/employees.js"></script>
+	<script src="../vue/js/utilisateurs.js"></script>
 	<div class="container-fluid">
 		<div class="row">
 			<footer class="col-lg-12">

@@ -5,14 +5,15 @@ class Utilisateur{
 		$utilisateurs->id=$pUtilisateur;
 		$utilisateurs->read();
 
-		if(isset($utilisateurs->data[1]) && is_object($utilisateurs->data[0]->code) && $utilisateurs->data[0]->code==$pMdp){
-
+		if(isset($utilisateurs->data[0]->code) && $utilisateurs->data[0]->code==$pMdp){
+			$_SESSION["ADMIN"] = $utilisateurs->data[0]->admin;
+			
 			return true;
 		}
 		else{
-			
 			return false;
 		}
+
 
 	}
 

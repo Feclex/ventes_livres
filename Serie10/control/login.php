@@ -9,16 +9,11 @@ if(isset($_POST['UTILISATEUR']) && isset($_POST['MDP'])){
 			$_SESSION['UTILISATEUR_OK']=true;
 
 	
-		header("../control/page1.php");
+		header("Location: ../control/page1.php");
 	}
 }
 
-
-
 require '../vue/haut.php' ;
-
-
 require_once '../vue/login.php';
 require '../vue/bas.php' ;
-
 ?>
