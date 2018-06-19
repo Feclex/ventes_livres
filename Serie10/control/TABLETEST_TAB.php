@@ -37,9 +37,4 @@ $Utilisateurs->read(null,$where);
 
 require '../vue/TABLETEST_TAB.php' ;
 
-
-
 ?>
-
-
-

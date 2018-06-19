@@ -1,4 +1,5 @@
 
+
 var clicActive = function(){
 
     if($(this).text()=="0"){
@@ -8,6 +9,7 @@ var clicActive = function(){
               
          $destination='utilisateur_desactive.php';
     }
+    console.log($(this).parent().attr('id') )
     var elem = $( this );
     $.post($destination, { code : $(this).parent().attr('id') } )
     .done(function( data ) {
@@ -19,4 +21,4 @@ var clicActive = function(){
     $(function(){
     $('#utilisateurs #actif').on('click',clicActive);
     });
-    
+

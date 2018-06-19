@@ -40,4 +40,3 @@ require '../vue/page4.php' ;
 
 
 ?>
-

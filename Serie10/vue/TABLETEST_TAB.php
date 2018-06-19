@@ -24,7 +24,8 @@ $out ='<table id="utilisateurs" class="table table-dark">'.$titre.$out.'</table>
 echo $out;
 
 ?>
-
+<script src="../vue/js/employees.js"></script>
+<script src="../vue/js/utilisateurs.js"></script>
 <!-- <script>
  function showHint(str) {
      if (str.length == 0) { 

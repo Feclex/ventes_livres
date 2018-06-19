@@ -10,7 +10,7 @@ var  clicModif = function(){
 					      '<div class="modal-content">'+
 					        '<div class="modal-header">'+
 					          '<button type="button" class="close" data-dismiss="modal">&times;</button>'+
-					          '<h4 class="modal-title">Modal Header</h4>'+
+					          '<h4 class="modal-title">Fiche utilisateur</h4>'+
 					        '</div>'+
 					        '<div class="modal-body">'+
 					        '  <p></p>'+
@@ -30,6 +30,9 @@ var  clicModif = function(){
   				);
 };
 $(function(){
+
 	$('#utilisateurs #actif').on('click',clicActive);
 	$('#utilisateurs #modifier').on('click',clicModif);
+
+
 });
