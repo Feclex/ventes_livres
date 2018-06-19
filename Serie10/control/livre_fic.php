@@ -11,7 +11,6 @@ $VarMode 	 		="C";
 $ventelivres=Model::load("livres");
 $ventelivres->dump_sql=true;
 
-/*SI je suis dans un mode, c'est que je dois effectuer une action DB*/
 if(isset($_POST['MODE'])){
 
 	$VarMode = "U";

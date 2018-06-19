@@ -14,8 +14,9 @@ class livres extends Model{
 		}
 
 
-		function livre_create($LivreId,$Titre,$Auteur,$Prix){
+		function livre_create($LivreId,$Titre,$Auteur,$Prix,$Actif){
 			$sql= "insert into livres values( ".$LivreId.", '".$Titre."' , '".$Auteur."', ".$Prix." , ".$Actif." ) ";
+			echo $sql;
 			$this->connection->query($sql);
 		}
 	
