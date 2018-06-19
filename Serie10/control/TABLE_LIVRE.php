@@ -1,28 +1,23 @@
 <?php 
 require_once '../control/core.php' ;
-?>
 
-
-<?php 
-
-$VarAuteur 	 ="";
-$VarTitre = "";
+$VarTitre 	 ="";
 $where		 ="";
-if (isset($_POST['AUTEUR'])){
-	$VarAuteur=$_POST['AUTEUR'];
+
+if (isset($_POST['TITRE'])){
+	$VarTitre=$_POST['TITRE'];
 	if($where!=""){
 		$where.=" and ";
 	}
-	$where.=" upper(auteur)  like upper('%".$VarAuteur."%' )";
+	$where.=" upper(TITRE)  like upper('%".$VarTitre."%')";
 }
-
 
 if(Control_util::isAjax()){
 	$monFormulaire = new Form('FormTABLE_LIVRE','post','?');
-		$monFormulaire->addText('Auteur :','AUTEUR','AUTEUR',$VarAuteur,false,'Entrez ici l\'auteur recherché');
-		// $monFormulaire->addSubmit('VALIDER','Valider');
+		$monFormulaire->addText('titre :','TITRE','TITRE',$VarTitre,false,'Entrez ici le titre recherché');
 		echo $monFormulaire->getForm();
 	}
+	
 	if(Control_util::isAjax()){
 		$monFormulaire2 = new Form('NewTABLE_LIVRE','post','livre_fic.php');
 		$monFormulaire2->addSubmit('VALIDER','Ajouter un livre');

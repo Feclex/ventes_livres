@@ -17,7 +17,7 @@ foreach($element as $subkey => $subelement){
     $titre.= '<th>Modification</th></tr>';
   }
       $titre_trt= true;
-      $out .= '<td id="modifier"><button type="button" class="btn btn-sucess btn-lg" data-toggle="modal" data-target="#myModal"><i class="far fa-edit"></i></button></td>';
+      $out .= '<td id="modifier"><button type="button" class="btn btn-sucess btn-lg" ><i class="far fa-edit"></i></button></td>';
   $out .= "</tr>";
 }
 $out ='<table id="utilisateurs" class="table table-dark">'.$titre.$out.'</table>'; 

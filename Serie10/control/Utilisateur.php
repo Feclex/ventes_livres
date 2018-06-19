@@ -13,10 +13,5 @@ class Utilisateur{
 		else{
 			return false;
 		}
-
-
 	}
-
-}
-
-?>
+}?>

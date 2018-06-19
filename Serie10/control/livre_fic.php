@@ -16,9 +16,6 @@ if(isset($_POST['MODE'])){
 
 	$VarMode = "U";
 
-	if(isset($_POST['TITRE'])){
-		$VarAuteur 	= $_POST['TITRE'];	
-	}
 	if(isset($_POST['ACTIF'])){
 		$VarActif 	= $_POST['ACTIF'];	
 	}
@@ -35,13 +32,13 @@ if(isset($_POST['MODE'])){
 }else{
 
 	/* Je dois juste afficher l'utilisateur passé en paramètre*/
-			if (isset($_POST['TITRE'])){
-			$VarLivre=$_POST['TITRE'];
+			if (isset($_POST['LIVREID'])){
+			$VarLivre=$_POST['LIVREID'];
 			$VarMode = "U";
 			$ventelivres->id=$VarLivre;
 			$ventelivres->read();
 	
-			if(isset($ventelivres->data[0]->titre)){
+			if(isset($ventelivres->data[0]->livreID)){
 				$VarLivre 			=$ventelivres->data[0]->livreID;
 				$VarAuteur 	 		=$ventelivres->data[0]->auteur;
 				$VarPrixUnitaire 	=$ventelivres->data[0]->prix_unitaire;
