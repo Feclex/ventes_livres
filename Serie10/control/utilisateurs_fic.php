@@ -18,10 +18,10 @@ if(isset($_POST['MODE'])){
 	$VarMode = "U";
 
 	if(isset($_POST['ADMINISTRATEUR'])){
-		$VarAdministrateur 	= $_POST['ADMINISTRATEUR'];	
+		$VarAdministrateur 	= 1;	
 	}
 	if(isset($_POST['ACTIF'])){
-		$VarActif 	= $_POST['ACTIF'];	
+		$VarActif 	= 1;	
 	}
 
 	switch ($_POST['MODE']) {
