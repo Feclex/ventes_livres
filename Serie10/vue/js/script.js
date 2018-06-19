@@ -75,7 +75,7 @@ var  clicModifLivre = function(){
     console.log($(this).parent().attr('id'))
     $.post( $destination, { LIVREID : $(this).parent().attr('id') })
     .done(function( data ) {
-      displayModal(data);
+      displayModalLivre(data);
     });
   };
   
@@ -96,7 +96,7 @@ var  clicNewLivre = function(event){
     $destination='livre_fic.php';
     $.post( $destination)
     .done(function( data ) {
-      displayModal(data);
+      displayModalLivre(data);
     });
   };
   
@@ -152,7 +152,7 @@ var displayModalLivre= function(data){
     $("#myModal").modal();
     $("#myModal form").submit(function( event ) {
       event.preventDefault();
-      $.post('livre_fic.php',$(this).serialize()).done(function(data) {});
+      $.post('livre_fic.php',$(this).serialize()).done(function(data) {console.log(data)});
       $("#myModal").modal('toggle');
       $("form #TITRE").trigger('keyup');
   

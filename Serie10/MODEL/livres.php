@@ -14,13 +14,14 @@ class livres extends Model{
 		}
 
 
-		function livre_create($Titre,$Auteur,$Prix){
-			$sql= "insert into livres values( '".$Titre."' , '".$Auteur."', '".$Prix."') ";
+		function livre_create($LivreId,$Titre,$Auteur,$Prix){
+			$sql= "insert into livres values( ".$LivreId.", '".$Titre."' , '".$Auteur."', ".$Prix." , ".$Actif." ) ";
 			$this->connection->query($sql);
 		}
 	
-		function livre_update($Titre,$Auteur,$Prix){
-			$sql= "update livres set titre = '".$Titre."', auteur = '".$Auteur."', prix = '".$Prix."' ";
+		function livre_update($LivreId,$Titre,$Auteur,$Prix,$Actif){
+			$sql= "update livres set titre = '".$Titre."', auteur = '".$Auteur."', prix_unitaire = ".$Prix." , actif = ".$Actif."  where livreID = '".$LivreId."' ";
+			echo $sql;
 			$this->connection->query($sql);
 		}
 

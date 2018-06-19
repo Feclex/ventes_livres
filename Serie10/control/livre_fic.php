@@ -1,7 +1,7 @@
 <?php 
 require_once '../control/core.php' ;
 
-$VarLivre		 	="";
+$VarLivre		 	=0;
 $VarAuteur 	 		="";
 $VarPrixUnitaire 	="";
 $VarTitre 			="";
@@ -22,10 +22,10 @@ if(isset($_POST['MODE'])){
 	
 	switch ($_POST['MODE']) {
 		case 'C':
-			$ventelivres->livre_create($_POST['TITRE'],$_POST['AUTEUR'],$_POST['PRIX'],$VarAuteur,$VarActif);
+			$ventelivres->livre_create($_POST['LIVREID'],$_POST['TITRE'],$_POST['AUTEUR'],(float)$_POST['PRIX_UNITAIRE'],$VarActif);
 			break;
 		case 'U':
-			$ventelivres->livre_update($_POST['TITRE'],$_POST['AUTEUR'],$_POST['PRIX'],$VarAuteur,$VarActif);
+			$ventelivres->livre_update($_POST['LIVREID'],$_POST['TITRE'],$_POST['AUTEUR'],(float)$_POST['PRIX_UNITAIRE'],$VarActif);
 		default;
 		break;
 	}	
@@ -52,6 +52,7 @@ if(isset($_POST['MODE'])){
 
 $monFormulaire = new Form('Formulaire','post','livre_fic.php');
 $monFormulaire->addHidden('MODE','MODE',$VarMode);
+$monFormulaire->addHidden('LIVREID','LIVREID',$VarLivre);
 $monFormulaire->addText('Auteur :','AUTEUR','AUTEUR','',false,'Entrez ici votre auteur',$VarAuteur);
 $monFormulaire->addText('Titre :','TITRE','TITRE','',false,'Entrez ici votre titre',$VarTitre);
 $monFormulaire->addText('Prix :','PRIX_UNITAIRE','PRIX_UNITAIRE','',false,'Entrez ici votre prix',$VarPrixUnitaire);
