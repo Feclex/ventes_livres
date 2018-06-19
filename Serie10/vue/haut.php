@@ -55,11 +55,6 @@ if(isset($_SESSION['UTILISATEUR_OK']) && $_SESSION['UTILISATEUR_OK'] == 1 && iss
 		}
 	 
 	?>
-				</ul>
-			
-
-		</div>
-		
-		
+				</ul>	
+		</div>		
 	</nav>
-	

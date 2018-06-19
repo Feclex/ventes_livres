@@ -1,32 +1,60 @@
 <?php 
-
-require_once '../control/core.php' ; 
+require_once '../control/core.php' ;
 
 $VarLivre		 	="";
 $VarAuteur 	 		="";
 $VarPrixUnitaire 	="";
 $VarTitre 			="";
-$VarActif 	 		="";
+$VarActif 	 		=0;
+$VarMode 	 		="C";
 
-if (isset($_POST['LIVRE'])){
-	$VarLivre=$_POST['LIVRE'];
+$ventelivres=Model::load("livres");
+$ventelivres->dump_sql=true;
+
+/*SI je suis dans un mode, c'est que je dois effectuer une action DB*/
+if(isset($_POST['MODE'])){
+
+	$VarMode = "U";
+
+	if(isset($_POST['TITRE'])){
+		$VarAuteur 	= $_POST['TITRE'];	
+	}
+	if(isset($_POST['ACTIF'])){
+		$VarActif 	= $_POST['ACTIF'];	
+	}
+	
+	switch ($_POST['MODE']) {
+		case 'C':
+			$ventelivres->livre_create($_POST['TITRE'],$_POST['AUTEUR'],$_POST['PRIX'],$VarAuteur,$VarActif);
+			break;
+		case 'U':
+			$ventelivres->livre_update($_POST['TITRE'],$_POST['AUTEUR'],$_POST['PRIX'],$VarAuteur,$VarActif);
+		default;
+		break;
+	}	
+}else{
+
+	/* Je dois juste afficher l'utilisateur passé en paramètre*/
+			if (isset($_POST['TITRE'])){
+			$VarLivre=$_POST['TITRE'];
+			$VarMode = "U";
+			$ventelivres->id=$VarLivre;
+			$ventelivres->read();
+	
+			if(isset($ventelivres->data[0]->titre)){
+				$VarLivre 			=$ventelivres->data[0]->livreID;
+				$VarAuteur 	 		=$ventelivres->data[0]->auteur;
+				$VarPrixUnitaire 	=$ventelivres->data[0]->prix_unitaire;
+				$VarTitre 			=$ventelivres->data[0]->titre;
+				$VarActif 	 		=$ventelivres->data[0]->actif;
+			}
+		}
+	/* Je dois juste afficher l'utilisateur passé en paramètre*/
 	
 }
 
-$Livres=Model::load("livres");
-$Livres->id=$VarLivre;
-$Livres->read();
-
-if(isset($Livres->data[0]->livreID)){
-	$VarLivre 			=$Livres->data[0]->livreID;
-	$VarAuteur 	 		=$Livres->data[0]->auteur;
-	$VarPrixUnitaire 	=$Livres->data[0]->prix_unitaire;
-	$VarTitre 			=$Livres->data[0]->titre;
-	$VarActif 	 		=$Livres->data[0]->actif;
-}
-
-$monFormulaire = new Form('Formulaire','post','page4.php');
-
+$monFormulaire = new Form('Formulaire','post','livre_fic.php');
+$monFormulaire->addHidden('MODE','MODE',$VarMode);
 $monFormulaire->addText('Auteur :','AUTEUR','AUTEUR','',false,'Entrez ici votre auteur',$VarAuteur);
 $monFormulaire->addText('Titre :','TITRE','TITRE','',false,'Entrez ici votre titre',$VarTitre);
 $monFormulaire->addText('Prix :','PRIX_UNITAIRE','PRIX_UNITAIRE','',false,'Entrez ici votre prix',$VarPrixUnitaire);

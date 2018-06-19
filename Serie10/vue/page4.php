@@ -1,9 +1,4 @@
-<head>
-  <title>Liste livres</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=0">
-  <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
-</head>
+
 <?php
 $out = "";
 $titre= '<tr>';
@@ -28,5 +23,5 @@ foreach($element as $subkey => $subelement){
 $out ='<table id="livres" class="table table-dark">'.$titre.$out.'</table>'; 
 echo $out;
 ?>
-<script src="../vue/js/livre.js"></script>
+
 

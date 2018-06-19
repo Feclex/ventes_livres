@@ -1,12 +1,7 @@
 <?php 
 require_once '../control/core.php' ;
-?>
-
-
-<?php 
 
 $VarPrenom 	 ="";
-$VarNom = "";
 $where		 ="";
 if (isset($_POST['PRENOM'])){
 	$VarPrenom=$_POST['PRENOM'];
@@ -16,25 +11,18 @@ if (isset($_POST['PRENOM'])){
 	$where.=" upper(prenom)  like upper('%".$VarPrenom."%' )";
 }
 
-$monFormulaire = new Form('Formulaire','post','?');
-
-$monFormulaire->addText('Prénom :','PRENOM','PRENOM',$VarPrenom,false,'Entrez ici le prénom recherché');
-if (isset($_POST['NOM'])){
-	$VarNom=$_POST['NOM'];
-	if($where!=""){
-		$where.=" and ";
-	}
-	$where.=" upper(nom)  like upper('%".$VarNom."%' )";
+if(Control_util::isAjax()){
+$monFormulaire = new Form('FormTABLETEST_TAB','post','?');
+	$monFormulaire->addText('Prénom :','PRENOM','PRENOM',$VarPrenom,false,'Entrez ici le prénom recherché');
+	// $monFormulaire->addSubmit('VALIDER','Valider');
+	echo $monFormulaire->getForm();
 }
-
-$monFormulaire->addText('Nom :','NOM','NOM',$VarNom,false,'Entrez ici le nom recherché');
-$monFormulaire->addSubmit('VALIDER','Valider');
-echo $monFormulaire->getForm();
-
+if(Control_util::isAjax()){
+	$monFormulaire2 = new Form('NewTABLETEST_TAB','post','utilisateurs_fic.php');
+	$monFormulaire2->addSubmit('VALIDER','Ajouter un utilisateur');
+	echo $monFormulaire2->getForm();
+}
 $Utilisateurs=Model::load("utilisateurs");
-$Utilisateurs->read(null,$where);
-
-
+$Utilisateurs->read(null,$where); 
 require '../vue/TABLETEST_TAB.php' ;
-
 ?>

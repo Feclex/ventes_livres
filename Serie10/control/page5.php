@@ -1,8 +1,15 @@
 <?php 
 	$Montitle= 'Liste membres';
 	require_once '../control/core.php' ;
-	require '../vue/haut.php' ;
+
+		if(Control_util::isAjax()){
+			require '../vue/haut.php' ;
+			}
+	
 	require '../control/TABLETEST_TAB.php' ;
-	require '../vue/bas.php' ;
+
+	if(Control_util::isAjax()){
+		require '../vue/bas.php' ;
+		}
 ?>
 

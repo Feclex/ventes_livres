@@ -23,6 +23,12 @@ class form{
 		$this->monForm.='<br/>';
 		
 	}
+	public function addHidden($pName,$pId,$pValue='')
+	{	
+		
+		$this->monForm.='<input type="hidden" name="'.$pName.'" id="'.$pId.'"  value = "'.$pValue.'"/><br/>';
+	}
+
 
 	private function getRequired($pRequired){
 		if($pRequired==true){

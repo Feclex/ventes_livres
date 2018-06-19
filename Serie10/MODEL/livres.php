@@ -13,5 +13,17 @@ class livres extends Model{
 		$this->connection->query($sql);
 		}
 
-}
+
+		function livre_create($Titre,$Auteur,$Prix){
+			$sql= "insert into livres values( '".$Titre."' , '".$Auteur."', '".$Prix."') ";
+			$this->connection->query($sql);
+		}
+	
+		function livre_update($Titre,$Auteur,$Prix){
+			$sql= "update livres set titre = '".$Titre."', auteur = '".$Auteur."', prix = '".$Prix."' ";
+			$this->connection->query($sql);
+		}
+
+	}
+
 ?>
